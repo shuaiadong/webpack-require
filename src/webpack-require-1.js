@@ -23,7 +23,9 @@
         }
 
         // 执行模块
-        installedModules[moduleId].call(module.exports, module, module.exports, _webpack_require_)
+        // installedModules ? 
+        // modules
+        modules[moduleId].call(module.exports, module, module.exports, _webpack_require_)
         /**
          * installedModules[moduleId].call(
          *                                  module.exports,       // this
